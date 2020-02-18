@@ -1,0 +1,47 @@
+---
+title: "Untitled"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Header One
+
+Hello everybody! **this is markdown**
+
+* fee
+* fi
+* fo
+* fum
+
+LaTeX documentation
+
+$\sum{x^2}$
+
+```{r name_1}
+#this is normal r code
+
+x <- c(1, 2, 3)
+x
+
+```
+
+
+```{r, echo = FALSE}
+library(ggplot2)
+y <- x + 2
+print(y)
+```
+
+
+function_name(name1 = value1, name2 = value2, ...)
+
+```{r}
+bg_chem <- read.csv(file = "data/BGchem2008data.csv", 
+                    stringsAsFactors = FALSE)
+```
+
