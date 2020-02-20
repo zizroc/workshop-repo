@@ -1,0 +1,46 @@
+---
+title: "function-maker"
+author: "Marcus J Thomson"
+date: "2/20/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Define a funciton
+
+```{r}
+plus_one <- function(x){
+  x + 1
+}
+```
+
+Call the function
+```{r}
+my_number <- plus_one(10)
+
+my_number
+```
+
+Write a function that computes percentage of 2 numbers
+
+```{r}
+pc_num <- function(n, p){
+  n*p
+}
+
+pc_num(p=0.29, n = 400)
+
+rat_num <- function(n, p, k=100){
+  n*p/k
+}
+
+rat_num(p=0.29, n = 400)
+
+source("sqrt_num_function.R")
+
+sqrt_num(x = 10, y = 4)
+```
+
